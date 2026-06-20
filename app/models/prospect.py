@@ -1,9 +1,10 @@
 from pydantic import BaseModel
 
 class ProspectProfile(BaseModel):
-    company_str: str
+    company_name: str
     industry: str
-    employee_count: str
-    recent_news: list[str]
+    products: list[str]
+    key_opportunities: list[str]
+    recommendation: str
     lead_score: int
     
