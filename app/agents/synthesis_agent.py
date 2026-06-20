@@ -4,6 +4,8 @@ from app.services.llm import llm
 def synthesis_agent(state: SalesState):
     company = state["company_name"]
     research = state["research_data"]
+    news = state["news_data"]
+    crm = state["crm_data"]
 
     prompt = f"""
     You are a B2B sales analyst
@@ -12,13 +14,17 @@ def synthesis_agent(state: SalesState):
        Company:{company}
 
        Research: {research}
+
+       News : {news}
+
+       CRM : {crm}
+
+
        
     Return: 
-    1. Industry
-    2. Main products
-    3. Opportunities
-    4. Lead Score (0-100)
-    5. Recommendation
+    1. Prospect Profile
+    2. Lead Score
+    3. Key Opportunities
     """
 
     response = llm.invoke(prompt)

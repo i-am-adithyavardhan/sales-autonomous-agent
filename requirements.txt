@@ -12,3 +12,6 @@ uvicorn
 streamlit
 grandalf
 tavily-python
+chromadb
+langchain-chroma
+langchain-text-splitters

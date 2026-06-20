@@ -7,4 +7,8 @@ class SalesState(TypedDict):
     prospect_summary: str
     lead_score: int
     email: str
+    news_data: str
+    # linkedin_data: str
+    crm_data: str
+
 
