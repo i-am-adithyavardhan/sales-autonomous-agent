@@ -1,2 +1,5 @@
 .env
 myenv
+/.cache/
+_pycache_/
+*.cache

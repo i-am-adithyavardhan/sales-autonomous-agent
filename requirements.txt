@@ -10,3 +10,5 @@ fastapi
 uvicorn
 
 streamlit
+grandalf
+tavily-python
