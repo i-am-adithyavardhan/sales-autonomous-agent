@@ -4,7 +4,7 @@ from app.services.llm import llm
 def synthesis_agent(state: SalesState):
     company = state["company_name"]
     research = state["research_data"]
-    news = state["news_data"]
+    news = state["news_result"]
     crm = state["crm_data"]
 
     prompt = f"""
