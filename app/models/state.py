@@ -1,14 +1,13 @@
 from typing import TypedDict
-
+from app.models.news import NewsResult
 
 class SalesState(TypedDict):
     company_name: str
     research_data: str
-    prospect_summary: str
+    crm_data: str
+    news_result: NewsResult
     lead_score: int
     email: str
-    news_data: str
+    prospect_summary: str
     # linkedin_data: str
-    crm_data: str
-
 
