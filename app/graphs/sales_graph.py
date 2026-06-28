@@ -31,11 +31,9 @@ def build_graph():
         synthesis_agent
     )
 
-    graph.add_edge(START,"orchestrator")
-    graph.add_edge("orchestrator","research")
-    graph.add_edge("orchestrator","news")
-    graph.add_edge("orchestrator","crm")
-
+    graph.add_edge(START,"research")
+    graph.add_edge(START,"news")
+    graph.add_edge(START,"crm")
     graph.add_edge("research","merge")
     graph.add_edge("news","merge")
     graph.add_edge("crm","merge")
@@ -46,3 +44,4 @@ def build_graph():
     
     
     return graph.compile()
+

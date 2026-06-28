@@ -14,7 +14,7 @@ print(f"Graph build in {time2-time1}")
 time1 = datetime.now()
 result = graph.invoke(
     {
-        "company_name": "Meta",    
+        "company_name": "Stripe",    
     }
 )
 time2 = datetime.now()
@@ -27,6 +27,8 @@ print(result)
 
 # print(result["prospect_summary"])
 
+# result = news_agent({"company_name": "Amazon"})
+# print(result)
 
 # result = research_agent({
 #     "company_name": "Netflix"
@@ -35,3 +37,4 @@ print(result)
 # print(result["research_data"][:2000])
 
 # Image(graph.get_graph().draw_mermaid_png())
+print(graph.get_graph(xray=True).draw_ascii())
