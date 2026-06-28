@@ -30,8 +30,9 @@ def build_graph():
     )
 
     graph.add_edge(START,"research")
-    graph.add_edge("research","news")
-    graph.add_edge("research","crm")
+    graph.add_edge(START,"news")
+    graph.add_edge(START,"crm")
+    graph.add_edge("research","merge")
     graph.add_edge("news","merge")
     graph.add_edge("crm","merge")
     graph.add_edge("merge","score")
@@ -41,3 +42,4 @@ def build_graph():
     
     
     return graph.compile()
+

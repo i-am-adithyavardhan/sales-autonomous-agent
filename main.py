@@ -6,16 +6,17 @@ from app.agents.news_agent import news_agent
 
 graph = build_graph()
 
-result = graph.invoke(
-    {
-        "company_name": "Amazon",    
-    }
-)
+# result = graph.invoke(
+#     {
+#         "company_name": "Stripe",    
+#     }
+# )
+
 
 # print(result["prospect_summary"])
 
-result = news_agent({"company_name": "Amazon"})
-print(result)
+#result = news_agent({"company_name": "Amazon"})
+#print(result)
 
 # result = research_agent({
 #     "company_name": "Netflix"
