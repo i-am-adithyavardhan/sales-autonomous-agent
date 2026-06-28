@@ -1,0 +1,184 @@
+{
+  "companies": [
+    {
+      "company": "Stripe",
+      "contacts": [
+        {
+          "id": "c001",
+          "name": "Sarah Chen",
+          "email": "s.chen@stripe.com",
+          "job_title": "VP Finance",
+          "lifecycle_stage": "opportunity"
+        },
+        {
+          "id": "c002",
+          "name": "James Patel",
+          "email": "j.patel@stripe.com",
+          "job_title": "Head of Accounts Payable",
+          "lifecycle_stage": "opportunity"
+        }
+      ],
+      "deals": [
+        {
+          "id": "d001",
+          "name": "Stripe - Invoice Automation Pilot",
+          "stage": "negotiation",
+          "amount": 45000.0,
+          "close_date": "2025-09-30"
+        }
+      ]
+    },
+    {
+      "company": "Razorpay",
+      "contacts": [
+        {
+          "id": "c003",
+          "name": "Priya Sharma",
+          "email": "p.sharma@razorpay.com",
+          "job_title": "CFO",
+          "lifecycle_stage": "lead"
+        },
+        {
+          "id": "c004",
+          "name": "Vikram Nair",
+          "email": "v.nair@razorpay.com",
+          "job_title": "Finance Manager",
+          "lifecycle_stage": "lead"
+        }
+      ],
+      "deals": [
+        {
+          "id": "d002",
+          "name": "Razorpay - AP Automation Q3",
+          "stage": "proposal_sent",
+          "amount": 28000.0,
+          "close_date": "2025-08-15"
+        }
+      ]
+    },
+    {
+      "company": "Freshworks",
+      "contacts": [
+        {
+          "id": "c005",
+          "name": "Anita Rao",
+          "email": "a.rao@freshworks.com",
+          "job_title": "VP Operations",
+          "lifecycle_stage": "customer"
+        },
+        {
+          "id": "c006",
+          "name": "Karan Mehta",
+          "email": "k.mehta@freshworks.com",
+          "job_title": "CFO",
+          "lifecycle_stage": "customer"
+        }
+      ],
+      "deals": [
+        {
+          "id": "d003",
+          "name": "Freshworks - Enterprise License",
+          "stage": "closed_won",
+          "amount": 120000.0,
+          "close_date": "2024-11-01"
+        }
+      ]
+    },
+    {
+      "company": "Zepto",
+      "contacts": [
+        {
+          "id": "c007",
+          "name": "Rohit Gupta",
+          "email": "r.gupta@zepto.com",
+          "job_title": "Director of Finance",
+          "lifecycle_stage": "lead"
+        }
+      ],
+      "deals": []
+    },
+    {
+      "company": "PhonePe",
+      "contacts": [
+        {
+          "id": "c008",
+          "name": "Neha Kapoor",
+          "email": "n.kapoor@phonepe.com",
+          "job_title": "Head of Finance",
+          "lifecycle_stage": "lead"
+        }
+      ],
+      "deals": [
+        {
+          "id": "d005",
+          "name": "PhonePe - Invoice Tool Evaluation",
+          "stage": "closed_lost",
+          "amount": 35000.0,
+          "close_date": "2025-03-01"
+        }
+      ]
+    },
+    {
+      "company": "Swiggy",
+      "contacts": [
+        {
+          "id": "c009",
+          "name": "Arjun Das",
+          "email": "a.das@swiggy.com",
+          "job_title": "Finance Controller",
+          "lifecycle_stage": "subscriber"
+        }
+      ],
+      "deals": []
+    },
+    {
+      "company": "Cred",
+      "contacts": [
+        {
+          "id": "c010",
+          "name": "Sonal Jain",
+          "email": "s.jain@cred.club",
+          "job_title": "CFO",
+          "lifecycle_stage": "opportunity"
+        },
+        {
+          "id": "c011",
+          "name": "Rahul Bose",
+          "email": "r.bose@cred.club",
+          "job_title": "VP Finance",
+          "lifecycle_stage": "opportunity"
+        }
+      ],
+      "deals": [
+        {
+          "id": "d004",
+          "name": "Cred - Finance Automation Discovery",
+          "stage": "discovery",
+          "amount": 15000.0,
+          "close_date": "2025-10-01"
+        }
+      ]
+    },
+    {
+      "company": "Ola",
+      "contacts": [
+        {
+          "id": "c012",
+          "name": "Deepak Singh",
+          "email": "d.singh@ola.com",
+          "job_title": "Head of Accounts Payable",
+          "lifecycle_stage": "lead"
+        }
+      ],
+      "deals": [
+        {
+          "id": "d006",
+          "name": "Ola - Re-engagement 2025",
+          "stage": "closed_lost",
+          "amount": 20000.0,
+          "close_date": "2024-12-01"
+        }
+      ]
+    }
+  ]
+}
