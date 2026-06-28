@@ -8,14 +8,15 @@ from app.agents.news_agent import news_agent
 from app.agents.crm_agent import crm_agent
 from app.agents.scoring_agent import scoring_agent
 from app.agents.merge_agent import merge_agent
-from app.agents.orchestrator import orchestrator_agent
+from app.agents.linkedin_agent import linkedin_agent
+
 
 
 def build_graph():
 
     graph = StateGraph(SalesState)
 
-    graph.add_node("orchestrator",orchestrator_agent)
+    # graph.add_node("orchestrator",orchestrator_agent)
     graph.add_node(
         "research",
         research_agent
@@ -30,6 +31,7 @@ def build_graph():
         "synthesis",
         synthesis_agent
     )
+    graph.add_node("contacts",linkedin_agent)
 
     graph.add_edge(START,"research")
     graph.add_edge(START,"news")
@@ -38,7 +40,8 @@ def build_graph():
     graph.add_edge("news","merge")
     graph.add_edge("crm","merge")
     graph.add_edge("merge","score")
-    graph.add_edge("score","synthesis")
+    graph.add_edge("score","contacts")
+    graph.add_edge("contacts","synthesis")
     graph.add_edge("synthesis", END )
 
     

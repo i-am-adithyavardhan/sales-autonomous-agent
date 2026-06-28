@@ -45,6 +45,7 @@ def synthesis_agent(state: SalesState):
     news = state.get("news_result")
     crm = _format_crm_context(state)
     lead_score = state.get("lead_score", "Not scored")
+    contacts = state["contacts"]
 
     prompt = f"""
     You are a B2B sales analyst for an autonomous prospecting agent.
@@ -62,6 +63,9 @@ def synthesis_agent(state: SalesState):
 
     CRM context:
     {crm}
+
+    Contacts:
+    {contacts}
 
     Return exactly these sections:
     1. Prospect Profile

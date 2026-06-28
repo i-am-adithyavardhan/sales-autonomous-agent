@@ -4,6 +4,7 @@ from PIL import Image
 from app.agents.research_agent import research_agent
 from app.agents.news_agent import news_agent
 from datetime import datetime
+from app.agents.linkedin_agent import linkedin_agent
 
 time1 = datetime.now()
 graph = build_graph()
@@ -24,6 +25,8 @@ print(f"Graph execution achieved in {time2-time1}")
 
 # result = news_agent({"company_name": "Amazon"})
 print(result)
+# result = linkedin_agent({"company_name":"Stripe"})
+# print(result)
 
 # print(result["prospect_summary"])
 
@@ -37,4 +40,3 @@ print(result)
 # print(result["research_data"][:2000])
 
 # Image(graph.get_graph().draw_mermaid_png())
-print(graph.get_graph(xray=True).draw_ascii())
